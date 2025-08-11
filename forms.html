@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <title> FORMS HTML </title>
+        <meta chartset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+    </body>
+
+    <body>
+        
+        <!-- INPUT -->
+        <h1> INPUT </h1> 
+        <p> This is Input </p>
+
+        <form action="">
+            <label for="fname"> First Name </label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname"> Last Nane </label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" name="submit">
+        </form>
+        <P>Click the "Submit" button and the form-data will be sent to a page on the server called "action_page.php".</P>
+
+        <!-- TEXT AREA -->
+        <h1> TEXT AREA </h1>
+
+        <form action="">
+            <p><label for="textArea"> This is TextArea </label></p>
+            <textarea name="textArea" id="textArea" rows="4" cols="50">
+                PWEDE RAKA DLI MAKA INPUT SA CONSOLE
+            </textarea><br><br>
+            <input type="submit" name="submit">
+        </form>
+        <P>Click the "Submit" button and the form-data will be sent to a page on the server called "action_page.php".</P>
+
+        <!-- BUTTON -->
+         <h1> BUTTON </h1>
+         
+         <button type="button" onclick="alert('Hello World')">Click Me</button> <!-- button with PopUp feature -->
+
+         <!-- BUTTON VS INPUT -->
+
+         <h2> Button vs Input </h2> 
+
+         <h5> BUTTON with IMAGE & TEXT </h5>
+         <p>&lt;button&gt; Example (With IMAGE & BOLD TEXT)</p>
+         <button>
+            <img src="images/vsCodeLogo.svg" alt="vsCodeLogo">
+            <strong>Submit</strong>
+         </button>
+
+         <h5>Button with&lt;input type=""&gt; only.</h5>
+         
+         <input type="button" value="submit">
+
+         <!-- BUTTON IN FORM -->
+
+         <h2> BUTTON IN FORM? </h2>
+
+         <h5> BUTTON IN FORM </h5>
+         <p>1. If you want to submit a form:</p>
+         <ul>
+            <li>When clicked, this button sends the form data to the server.</li>
+            <li>The default behavior of type="submit" is to submit the form.</li>
+         </ul>
+         <form action="" method="">
+            <input type="text" name="username">
+            <button type="submit">Submit</button>
+         </form>
+
+         <h5>BUTTON not in FORM(Ex. Using JavaScript to do something else)</h5>
+         <ul>
+            <li>These buttons are not submitting anything.</li>
+            <li>You can use them to trigger actions, like popups, animations, etc.</li>
+         </ul>
+         <input type="button" value="Clicke Me" onclick="alert('Hello Javie')">
+
+
+         <!-- Select Tag -->
+          
+         <h1> Select </h1>
+
+         <label for="cars">Choose a car!</label>
+         
+         <br><br>
+
+         <select name="cars" id= "cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="ferrari">Ferrari</option>
+         </select>
+
+         <!-- OptGroup -->
+
+         <form action="">
+            <label for="fruitsAndVegetables">Fruites&Vegetables</label>
+            <select name="fruitsAndVegetables" id="fruitsAndVegetables">
+
+                <optgroup label="fruits">
+                    <option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
+                    <option value="orange">Orange</option>
+                </optgroup>
+                
+                <optgroup label="vegetable">
+                    <option value="brocolli">Brocolli</option>
+                    <option value="potato">Potato</option>
+                    <option value="eggplant">EggPlant</option>
+                </optgroup>
+
+                
+            </select>
+         </form>
+    </body>
+</html>
